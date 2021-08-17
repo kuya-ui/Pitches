@@ -15,9 +15,13 @@ This is a detailed description of your application, where users make different p
 ## Known Bugs
 No known bugs yet
 ## Technologies Used
+* Python3
 * HTML
 * CSS
-* Javascript
+* Bootstrap
+* Flask
+* Postgressql
+* Herouku
 ## Support and contact details
 If you want to contact me,
 * kuyamaxmillan@gmail.com
