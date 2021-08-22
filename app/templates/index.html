@@ -1,0 +1,64 @@
+{% extends 'base.html' %} {% import 'macros.html' as macro %} {%block content%}
+<div class=back>
+    <div class=" text-center ">
+        <h3>WELCOME TO MY PITCHES</h3>
+        <hr>
+    </div>
+    <hr>
+    <br><br>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4 ">
+                <div class="well well-lg " style="text-align: center; ">
+                    <h3>ENTERTAINMENT Pitches</h3>
+                    <hr>
+                    <p>Never give up on what you really want to do. The person with big dreams is more powerful than one with all the facts. </p>
+                    <a href="{{url_for( 'main.interview_pitches')}} " class="btn btn-info btn-center -center ">Click to
+                        view</a>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="well well-lg " style="text-align: center; ">
+                    <h3>MOTIVATIONAL Pitches</h3>
+                    <hr>
+                    <p>"Don't stop when you're tired, Stop when you're done. " </p>
+                    <a href="{{url_for( 'main.product_pitches')}} " class="btn btn-info -center ">Click to view</a>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="well well-lg " style="text-align: center; ">
+                    <h3>LOVE Pitches</h3>
+                    <hr>
+                    <p>"There is only one happiness in this life, to love and be loved. " </p>
+                    <a href="{{url_for( 'main.promotion_pitches')}} " class="btn btn-info -center ">Click to view</a>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="well well-lg " style="text-align: center; ">
+                    <h3>SOCCER Pitches</h3>
+                    <hr>
+                    <p>"You can overcome anything if, and only if you love something enough. " </p>
+                    <a href="{{url_for( 'main.promotion_pitches')}} " class="btn btn-info -center ">Click to view</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+<style>
+    body {
+        background-color: aqua;
+    }
+
+    .container {
+        margin-top: 200px;
+    }
+
+    .well-lg {
+        background-color: rgba(rgb(15, 16, 32), green, blue, alpha);
+    }
+</style>
+
+{%endblock%}
