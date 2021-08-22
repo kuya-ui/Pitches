@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% import 'macros.html' as macro %}{%block content%}
+<div class="text-center">
+    <h1>MOTIVATIONAL PITCHES</h1>
+</div>
+<div class="container">
+    <hr>
+    <div class="row" style="margin-top: 300px;">
+        {{macro.displayPitches(pitches)}}
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: lightgreen;
+    }
+</style>
+
+{%endblock%}
