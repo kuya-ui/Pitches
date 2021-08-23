@@ -1,4 +1,4 @@
-# My Pet Project
+# My Pitch project
 #### This is a simple python application that lets users submit there different pitches, 2021
 #### By MAXMILLAN KUYA
 ## Description
