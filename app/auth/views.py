@@ -1,3 +1,11 @@
+from . import  auth
+# from app import db, bcrypt
+from flask_login import login_user, logout_user, current_user, login_required
+from ..models import User
+from flask import  render_template,url_for, flash, redirect
+from .forms import RegistrationForm, LoginForm
+
+
 @auth.route('/login',methods=['GET','POST'])
 def login():
     login_form = LoginForm()
@@ -13,6 +21,7 @@ def login():
     return render_template('auth/login.html',login_form = login_form,title=title)
 
 @auth.route('/register',methods = ["GET","POST"])
+@login_required
 def register():
     form = RegistrationForm()
     if form.validate_on_submit():

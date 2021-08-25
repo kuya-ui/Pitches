@@ -12,10 +12,10 @@ login_manager = LoginManager()
 login_manager.session_protection = 'strong'
 login_manager.login_view = 'auth.login'
 
-# simple = SimpleMDE()
+simple = SimpleMDE()
 
 db = SQLAlchemy()
-# mail = Mail()
+mail = Mail()
 bootstrap = Bootstrap()
 photos = UploadSet('photos',IMAGES)
 
@@ -34,7 +34,6 @@ def create_app(config_name):
     bootstrap.init_app(app)
     login_manager.init_app(app)
     simple.init_app(app)
-    
 
     # Registering the blueprint
     from .main import main as main_blueprint

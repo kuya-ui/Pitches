@@ -1,6 +1,6 @@
 class PitchModelTest(unittest.TestCase):
     def setUp(self):
-        self.user_max = User(username = 'max',password = 'apple', email = 'james@ms.com')
+        self.user_max = User(username = 'max',password = 'banana', email = 'james@ms.com')
         self.new_pitch = Pitch(id=1,pitch_title='Test',pitch_content='This is a test pitch',category="interview",user = self.user_max,likes=0,dislikes=0)
 
     def tearDown(self):

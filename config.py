@@ -4,7 +4,7 @@ class Config:
     '''
     General configuration parent class
     '''
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:kuyamaxmillan@localhost/Pitches'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://joseph:kuya@localhost/pitchess'
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     SECRET_KEY = os.environ.get('SECRET_KEY')
 
@@ -27,7 +27,7 @@ class ProdConfig(Config):
 
 pass
 class TestConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:kuyamaxmillan@localhost/Pitches'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://joseph:kuya@localhost/pitchess'
 
 
 class DevConfig(Config):
@@ -37,7 +37,7 @@ class DevConfig(Config):
         Config: The parent configuration class with General configuration settings
     '''
 
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:kuyamaxmillan@localhost/Pitches'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://joseph:kuya@localhost/pitchess'
 
     DEBUG = True
 
